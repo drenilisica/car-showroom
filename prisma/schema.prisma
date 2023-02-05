@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model cars {
+  id         Int        @id @default(autoincrement())
+  brand      cars_brand @default(Mercedes)
+  model      String     @db.VarChar(255)
+  engine     Int
+  HorsePower Int
+  year       Int
+  price      Int
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @default(now())
+}
+
+model users {
+  id         Int        @id @default(autoincrement())
+  firstName  String     @db.VarChar(255)
+  lastName   String     @db.VarChar(255)
+  role       users_role @default(Client)
+  email      String     @unique(map: "Users_email_key") @db.VarChar(255)
+  password   String     @db.VarChar(255)
+  creditCard Int
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @default(now())
+}
+
+enum cars_brand {
+  Mercedes
+  Audi
+  BMW
+  Vw
+  Porsche
+  Bentley
+  Masserati
+}
+
+enum users_role {
+  Client
+  Employee
+  Manager
+}

@@ -1,0 +1,28 @@
+.container{
+  margin-top: 300px;
+ border-style:solid;
+ border-radius: 20px;
+ background-image: linear-gradient(to right, rgb(204, 203, 203), rgb(131, 130, 130)) ;
+}
+p{
+padding: 30px 80px;
+font-family:'Lobster';
+font-size: 20px;
+font-weight: 500;
+}
+h2{
+  text-align: center;
+  font-family:'Lobster';
+}
+.about-us img{
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  vertical-align: middle;
+}

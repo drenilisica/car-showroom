@@ -24,13 +24,14 @@
   font-size: 15px;
   cursor: pointer;
   font-family: inherit;
-  color:white;
+  color:aliceblue;
   line-height: 1.5;
   user-select: none;
-  border: 2px solid white;
+  border: 2px solid aliceblue;
   text-decoration: none;
 }
 .btn:hover{
   color:black;
-  background-color:white;
+  background-color:#ffeba7;
+  border: 2px solid #ffeba7;
 }

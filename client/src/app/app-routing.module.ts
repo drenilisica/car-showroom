@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SignupComponent } from './signup/signup.component';
+import { LocationComponent } from './location/location.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'homepage', pathMatch:'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'about', component:AboutUsComponent},
   {path:'contact',component:ContactUsComponent},
   {path:'cars', component:CarsComponent},
-  {path:'homepage', component:HomepageComponent}
+  {path:'homepage', component:HomepageComponent},
+  {path:'location', component:LocationComponent}
 ];
 
 @NgModule({

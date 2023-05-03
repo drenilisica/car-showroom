@@ -1,0 +1,23 @@
+.location img{
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  vertical-align: middle;
+}
+.container{
+  margin-top: 350px;
+  margin-left:155px
+}
+.text{
+  text-align: center;
+  color:#ffeba7;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 320px;
+  margin-bottom:30px;
+}

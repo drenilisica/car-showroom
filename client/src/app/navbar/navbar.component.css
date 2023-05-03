@@ -1,0 +1,21 @@
+.btn{
+  color:black;
+  background-color: aliceblue;
+  font-weight: 600;
+}
+.btn:hover{
+  background-color: #ffeba7;
+}
+.nav-link{
+  color:aliceblue;
+}
+.nav-link:hover{
+  color:#ffeba7;
+}
+.fa-solid{
+  color:aliceblue;
+}
+.fa-solid:hover{
+  color:#ffeba7;
+}
+
